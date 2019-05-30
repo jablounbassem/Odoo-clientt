@@ -8,7 +8,7 @@ A Symfony Client for Odoo using Ripcord RPC library (as used in Odoo Web API doc
 * Download OdooClientBundle using [composer]()
 
 ```composer
-composer require sofia-holding/odoo-client-bundle
+composer require sofia-holding/odoo-client
 ```
 * Enable the Bundle
 ```php
