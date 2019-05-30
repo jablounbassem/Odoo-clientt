@@ -74,15 +74,9 @@ class OdooService
             $result = $models->execute_kw($this->db, $userId, $this->password,
                 $model, 'search_read',
                 array($table));
-        if(array_key_exists('faultCode', $result)){
-            $response = new Response();
-            $response->setStatusCode(403);
-            $response->headers->set('Refresh', '0; url=http://www.something.com/');
-            $response->send();
-        }else{
 
             return $result;
-        }
+
     }
 
     /**
