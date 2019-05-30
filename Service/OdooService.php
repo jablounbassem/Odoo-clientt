@@ -10,7 +10,7 @@
 namespace Odoo\ClientBundle\Service;
 
 use http\Header;
-use Odoo\XlientBundle\ripcord\ripcord;
+use Odoo\ClientBundle\ripcord\ripcord;
 use Symfony\Component\HttpFoundation\Response;
 
 class OdooService
