@@ -14,7 +14,7 @@
 //require_once(dirname(__FILE__).'/ripcord.php');
 namespace Odoo\ClientBundle\ripcord;
 
-use Odoo\ConnectorBundle\ripcord\ripcord;
+use Odoo\ClientBundle\ripcord\ripcord;
 /**
  * This class implements a simple RPC client, for XML-RPC, (simplified) SOAP 1.1 or Simple RPC. The client abstracts 
  * the entire RPC process behind native PHP methods. Any method defined by the rpc server can be called as if it was
