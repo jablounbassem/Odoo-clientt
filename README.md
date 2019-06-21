@@ -47,19 +47,25 @@ $odooService = $this->get('odoo_service');
 
 # Read records        
 $option[0] = array('id', '=', $id);
-$option[1] = array('name', '=', "Partner Name");
-$odooService->search('res.partner', $option);
+$odooService->search('purchase.order', $option);
 
-# Create records       
-$partner = array('name'=>"New Partner");
-$odooService->create('res.partner', $partner);
+# Create records
+$purchase_order = array(
+            'company_id' => 1,
+            'currency_id' => 1,
+            'partner_id' => 1,
+            'date_order' => "2019-06-14 00:00:00"
+
+        );
+
+$odooService->create('purchase.order', $purchase_order);
 
 # update records        
-$option[0] = array('name'=>"New  Partner Name");
-$odooService->update('res.partner',$id,$option);
+$option[0] = array('date_order'=>"2019-07-28 12:00:00");
+$odooService->update('purchase.order',$id,$option);
 
 # delete records        
-$odooService->delete('res.partner',$id);
+$odooService->delete('purchase.order',$id);
 ```
 
 ## Contributing
