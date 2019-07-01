@@ -11,7 +11,7 @@
 /**
  * Includes the static ripcord factory class and exceptions
  */
-use Odoo\ClientBundle\ripcord\ripcord;
+use Odoo\ClientBundle\ripcord;
 
 //require_once(dirname(__FILE__).'/ripcord.php');
  
